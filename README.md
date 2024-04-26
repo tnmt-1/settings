@@ -1,1 +1,3 @@
-# dotfiles
+# settings
+
+設定ファイルをまとめています。
