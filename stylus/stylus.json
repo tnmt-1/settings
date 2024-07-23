@@ -4,16 +4,16 @@
       "openEditInWindow": false,
       "openEditInWindow.popup": false,
       "windowPosition": {},
-      "show-badge": true,
+      "show-badge": false,
       "disableAll": false,
       "exposeIframes": false,
       "exposeStyleName": false,
-      "newStyleAsUsercss": false,
+      "newStyleAsUsercss": true,
       "styleViaASS": false,
       "styleViaXhr": false,
       "patchCsp": false,
       "urlInstaller": true,
-      "config.autosave": false,
+      "config.autosave": true,
       "schemeSwitcher.enabled": "system",
       "schemeSwitcher.nightStart": "18:00",
       "schemeSwitcher.nightEnd": "06:00",
@@ -50,16 +50,16 @@
       "editor.keyMap": "sublime",
       "editor.theme": "default",
       "editor.beautify": {
-        "end_with_newline": false,
-        "indent_conditional": true,
-        "indent_mozdoc": true,
-        "newline_after_open_brace": true,
-        "newline_before_close_brace": true,
+        "selector_separator_newline": true,
         "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
         "newline_between_properties": true,
+        "newline_before_close_brace": true,
         "newline_between_rules": false,
         "preserve_newlines": true,
-        "selector_separator_newline": true
+        "end_with_newline": false,
+        "indent_conditional": true,
+        "indent_mozdoc": true
       },
       "editor.beautify.hotkey": "",
       "editor.lintDelay": 300,
@@ -90,6 +90,7 @@
       "headerWidth.edit": 280,
       "headerWidth.install": 280,
       "headerWidth.manage": 280,
+      "popup.search.globals": false,
       "popupWidth": 246,
       "popupWidthMax": 280,
       "updateInterval": 24,
@@ -108,57 +109,73 @@
     "name": "フォント",
     "sections": [
       {
-        "code": "@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');\n\nhtml, body, h1, h2, h3, h4, h5, h6, div, p, input, textarea, span, label, section, article, header, footer, ul, li, ol {\n    font-family: Inter, \"源柔ゴシックL\", \"Noto Color Emoji\";\n}\n\npre code, pre, code, backquote, code span {\n    font-family: HackGen;\n}\n",
+        "code": "@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');\n\n:root {\n    --custom-font-family: Inter, \"源柔ゴシックL\", \"Noto Color Emoji\";\n    --custom-font-family-code: HackGen;\n}\n"
+      },
+      {
+        "code": "html, body, h1, h2, h3, h4, h5, h6, div, p, input, textarea, span, label, section, article, header, footer, ul, li, ol {\n    font-family: var(--custom-font-family);\n}\n\npre code, pre, code, backquote, code span {\n    font-family: var(--custom-font-family-code);\n}\n",
         "regexps": [
           "https?://(?!.*localhost).*"
         ]
       },
       {
-        "code": ".it-MdContent pre code {\n    font-family: HackGen;\n}",
+        "code": ".it-MdContent pre code {\n    font-family: var(--custom-font-family-code);\n}",
         "domains": [
           "qiita.com"
         ]
       },
       {
-        "code": "@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');\n\ndiv.wide-content-host div.BodyFragment div.PlainText {\n    font-family: Inter, \"源柔ゴシックL\", \"源真ゴシック\", \"Noto Color Emoji\";\n}\n\n#UniqueMessageBody pre * {\n    font-family: HackGen;\n}",
+        "code": "div.wide-content-host div.BodyFragment div.PlainText {\n    font-family: var(--custom-font-family);\n}\n\n#UniqueMessageBody pre * {\n    font-family: var(--custom-font-family-code);\n}",
         "domains": [
           "outlook.office.com"
         ]
       },
       {
-        "code": "@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');\n\n#info-detail span {\n    font-family: Inter, \"源柔ゴシックL\", \"源真ゴシック\", \"Noto Color Emoji\";\n}",
+        "code": "#info-detail span {\n    font-family: var(--custom-font-family);\n}",
         "domains": [
           "portal.rococo.co.jp"
         ]
       },
       {
-        "code": "@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');\n\n:root {\n    --sds-font-family-01: Inter, \"源柔ゴシックL\", \"源真ゴシック\", \"Noto Color Emoji\"!important;\n    --sds-font-family-monospace: HackGen!important;\n}\n\n.search__input--adv {\n    font-family: Inter, \"源柔ゴシックL\", \"源真ゴシック\", \"Noto Color Emoji\";\n}\n\ntextarea#read-only-cursor-text-area {\n    font-family: HackGen, ui-monospace,SFMono-Regular,\"SF Mono\",Menlo,Consolas,\"Liberation Mono\",monospace !important;\n}\n",
+        "code": ":root {\n    --sds-font-family-01: var(--custom-font-family)!important;\n    --sds-font-family-monospace: var(--custom-font-family-code)!important;\n}\n\n.search__input--adv {\n    font-family: var(--custom-font-family);\n}\n\ntextarea#read-only-cursor-text-area {\n    font-family: var(--custom-font-family-code), ui-monospace,SFMono-Regular,\"SF Mono\",Menlo,Consolas,\"Liberation Mono\",monospace !important;\n}\n",
         "domains": [
           "duckduckgo.com"
         ]
       },
       {
-        "code": "@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');\n\n.font-display, .prose :where(h2):not(:where([class~=\"not-prose\"] *)), .font-sans {\n    font-family: Inter, \"源柔ゴシックL\", \"源真ゴシック\", \"Noto Color Emoji\";\n}\n",
+        "code": ".font-display, .prose :where(h2):not(:where([class~=\"not-prose\"] *)), .font-sans {\n    font-family: var(--custom-font-family);\n}\n",
         "domains": [
           "www.perplexity.ai"
         ]
       },
       {
-        "code": "[class*=\"codeBlock\"] {\n    --fontFamilyMonospace: HackGen;\n}\n\n.scriptor-code-editor, .scriptor-code-editor span {\n    font-family: var(--fontFamilyMonospace, \"\"), \"Consolas\", monospace !important;\n}\n",
+        "code": "[class*=\"codeBlock\"] {\n    --fontFamilyMonospace: var(--custom-font-family-code);\n}\n\n.scriptor-code-editor, .scriptor-code-editor span {\n    font-family: var(--fontFamilyMonospace, \"\"), \"Consolas\", monospace !important;\n}\n",
         "domains": [
           "loop.cloud.microsoft"
         ]
       },
       {
-        "code": "textarea#wiki_content {\n    font-family: HackGen;\n}\n",
+        "code": "textarea#wiki_content {\n    font-family: var(--custom-font-family-code);\n}\n",
         "domains": [
           "github.com"
         ]
+      },
+      {
+        "code": ".r-1tl8opc {\n    font-family: var(--custom-font-family);\n}\n\n.public-DraftStyleDefault-block {\n    padding-bottom: 4px;\n    padding-top: 4px;\n}\n",
+        "domains": [
+          "x.com",
+          "twitter.com"
+        ]
+      },
+      {
+        "code": "#video-title.ytd-rich-grid-media {\n    font-family: Inter, \"源柔ゴシックL\", \"Noto Color Emoji\", system-ui;\n}",
+        "domains": [
+          "youtube.com"
+        ]
       }
     ],
-    "updateDate": 1719452510039,
+    "updateDate": 1721694792326,
     "_id": "699e03c3-93e7-4935-9607-3f541430acad",
-    "_rev": 1719452510040,
+    "_rev": 1721694792326,
     "id": 1,
     "exclusions": [
       "https://dev.virtualcip.com/*",
@@ -169,7 +186,8 @@
       "http://docs.care-robot.com.s3-website-ap-northeast-1.amazonaws.com/*",
       "https://dev.contegration.jp/*",
       "http://127.0.0.1:8000/*",
-      "https://authid-stg-ss.nyutai.auth-thru.com/*"
+      "https://authid-stg-ss.nyutai.auth-thru.com/*",
+      "https://tenhou.net/*"
     ]
   },
   {
@@ -186,7 +204,7 @@
     ],
     "updateDate": 1715903765452,
     "_id": "de4bd4e0-5699-4dbb-83e4-221acd99170f",
-    "_rev": 1715903765453,
+    "_rev": 1720303507933,
     "id": 2
   },
   {
@@ -203,7 +221,7 @@
     ],
     "updateDate": 1715903771826,
     "_id": "a657e783-536a-43d5-9c4b-e62924ae21d6",
-    "_rev": 1715903771826,
+    "_rev": 1720303507933,
     "id": 3
   }
 ]
