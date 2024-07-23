@@ -4,16 +4,16 @@
       "openEditInWindow": false,
       "openEditInWindow.popup": false,
       "windowPosition": {},
-      "show-badge": false,
+      "show-badge": true,
       "disableAll": false,
       "exposeIframes": false,
       "exposeStyleName": false,
-      "newStyleAsUsercss": true,
+      "newStyleAsUsercss": false,
       "styleViaASS": false,
       "styleViaXhr": false,
       "patchCsp": false,
       "urlInstaller": true,
-      "config.autosave": true,
+      "config.autosave": false,
       "schemeSwitcher.enabled": "system",
       "schemeSwitcher.nightStart": "18:00",
       "schemeSwitcher.nightEnd": "06:00",
@@ -50,16 +50,16 @@
       "editor.keyMap": "sublime",
       "editor.theme": "default",
       "editor.beautify": {
-        "selector_separator_newline": true,
-        "newline_before_open_brace": false,
-        "newline_after_open_brace": true,
-        "newline_between_properties": true,
-        "newline_before_close_brace": true,
-        "newline_between_rules": false,
-        "preserve_newlines": true,
         "end_with_newline": false,
         "indent_conditional": true,
-        "indent_mozdoc": true
+        "indent_mozdoc": true,
+        "newline_after_open_brace": true,
+        "newline_before_close_brace": true,
+        "newline_before_open_brace": false,
+        "newline_between_properties": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "selector_separator_newline": true
       },
       "editor.beautify.hotkey": "",
       "editor.lintDelay": 300,
@@ -167,15 +167,21 @@
         ]
       },
       {
-        "code": "#video-title.ytd-rich-grid-media {\n    font-family: Inter, \"源柔ゴシックL\", \"Noto Color Emoji\", system-ui;\n}",
+        "code": "#video-title.ytd-rich-grid-media {\n    font-family: var(--custom-font-family);\n}",
         "domains": [
           "youtube.com"
         ]
+      },
+      {
+        "code": ".fui-FluentProviderr0 {\n    --fontFamilyBase: var(--custom-font-family);\n    --fontFamilyMonospace: var(--custom-font-family-code);\n}\n",
+        "domains": [
+          "teams.microsoft.com"
+        ]
       }
     ],
-    "updateDate": 1721694792326,
+    "updateDate": 1721695115080,
     "_id": "699e03c3-93e7-4935-9607-3f541430acad",
-    "_rev": 1721694792326,
+    "_rev": 1721695115080,
     "id": 1,
     "exclusions": [
       "https://dev.virtualcip.com/*",
@@ -204,7 +210,7 @@
     ],
     "updateDate": 1715903765452,
     "_id": "de4bd4e0-5699-4dbb-83e4-221acd99170f",
-    "_rev": 1720303507933,
+    "_rev": 1715903765453,
     "id": 2
   },
   {
@@ -221,7 +227,7 @@
     ],
     "updateDate": 1715903771826,
     "_id": "a657e783-536a-43d5-9c4b-e62924ae21d6",
-    "_rev": 1720303507933,
+    "_rev": 1715903771826,
     "id": 3
   }
 ]
