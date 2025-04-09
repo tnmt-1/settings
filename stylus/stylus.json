@@ -1,19 +1,22 @@
 [
   {
     "settings": {
-      "openEditInWindow": false,
-      "openEditInWindow.popup": false,
-      "windowPosition": {},
-      "show-badge": true,
       "disableAll": false,
       "exposeIframes": false,
       "exposeStyleName": false,
+      "keepAlive": 0,
+      "keepAliveIdle": false,
       "newStyleAsUsercss": false,
+      "openEditInWindow": false,
+      "openEditInWindow.popup": false,
+      "patchCsp": false,
+      "show-badge": false,
       "styleViaASS": false,
       "styleViaXhr": false,
-      "patchCsp": false,
       "urlInstaller": true,
-      "config.autosave": false,
+      "windowPosition": {},
+      "compactWidth": 850,
+      "config.autosave": true,
       "schemeSwitcher.enabled": "system",
       "schemeSwitcher.nightStart": "18:00",
       "schemeSwitcher.nightEnd": "06:00",
@@ -28,9 +31,10 @@
       "manage.onlyEnabled.invert": false,
       "manage.onlyLocal.invert": false,
       "manage.onlyUsercss.invert": false,
-      "manage.actions.expanded": true,
+      "manage.actions.expanded": false,
       "manage.backup.expanded": true,
       "manage.filters.expanded": true,
+      "manage.links.expanded": true,
       "manage.minColumnWidth": 750,
       "manage.newUI": true,
       "manage.newUI.favicons": false,
@@ -41,6 +45,7 @@
       "editor.options": {},
       "editor.toc.expanded": true,
       "editor.options.expanded": true,
+      "editor.options.style.expanded": true,
       "editor.lint.expanded": true,
       "editor.publish.expanded": true,
       "editor.lineWrapping": true,
@@ -50,16 +55,16 @@
       "editor.keyMap": "sublime",
       "editor.theme": "default",
       "editor.beautify": {
-        "end_with_newline": false,
-        "indent_conditional": true,
-        "indent_mozdoc": true,
-        "newline_after_open_brace": true,
-        "newline_before_close_brace": true,
+        "selector_separator_newline": true,
         "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
         "newline_between_properties": true,
+        "newline_before_close_brace": true,
         "newline_between_rules": false,
         "preserve_newlines": true,
-        "selector_separator_newline": true
+        "end_with_newline": false,
+        "indent_conditional": true,
+        "indent_mozdoc": true
       },
       "editor.beautify.hotkey": "",
       "editor.lintDelay": 300,
@@ -74,6 +79,7 @@
       "editor.appliesToLineWidget": true,
       "editor.autosaveDraft": 10,
       "editor.livePreview": true,
+      "editor.livePreview.delay": 0.2,
       "editor.targetsFirst": true,
       "editor.colorpicker": true,
       "editor.colorpicker.hexUppercase": false,
@@ -95,8 +101,8 @@
       "popupWidthMax": 280,
       "updateInterval": 24,
       "updateOnlyEnabled": false,
-      "popup.breadcrumbs": true,
-      "popup.breadcrumbs.usePath": false
+      "popup.breadcrumbs": null,
+      "popup.breadcrumbs.usePath": null
     },
     "order": {
       "main": [],
@@ -105,129 +111,16 @@
   },
   {
     "enabled": true,
-    "installDate": 1664411248414,
+    "installDate": 1744155133489,
     "name": "フォント",
     "sections": [
       {
-        "code": "@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');\n\n:root {\n    --custom-font-family: Inter, \"源柔ゴシックL\", \"Noto Color Emoji\";\n    --custom-font-family-code: HackGen;\n}\n"
-      },
-      {
-        "code": "html, body, h1, h2, h3, h4, h5, h6, div, p, input, textarea, span, label, section, article, header, footer, ul, li, ol {\n    font-family: var(--custom-font-family);\n}\n\npre code, pre, code, backquote, code span {\n    font-family: var(--custom-font-family-code);\n}\n",
-        "regexps": [
-          "https?://(?!.*localhost).*"
-        ]
-      },
-      {
-        "code": ".it-MdContent pre code {\n    font-family: var(--custom-font-family-code);\n}",
-        "domains": [
-          "qiita.com"
-        ]
-      },
-      {
-        "code": "div.wide-content-host div.BodyFragment div.PlainText {\n    font-family: var(--custom-font-family);\n}\n\n#UniqueMessageBody pre * {\n    font-family: var(--custom-font-family-code);\n}",
-        "domains": [
-          "outlook.office.com"
-        ]
-      },
-      {
-        "code": "#info-detail span {\n    font-family: var(--custom-font-family);\n}",
-        "domains": [
-          "portal.rococo.co.jp"
-        ]
-      },
-      {
-        "code": ":root {\n    --sds-font-family-01: var(--custom-font-family)!important;\n    --sds-font-family-monospace: var(--custom-font-family-code)!important;\n}\n\n.search__input--adv {\n    font-family: var(--custom-font-family);\n}\n\ntextarea#read-only-cursor-text-area {\n    font-family: var(--custom-font-family-code), ui-monospace,SFMono-Regular,\"SF Mono\",Menlo,Consolas,\"Liberation Mono\",monospace !important;\n}\n",
-        "domains": [
-          "duckduckgo.com"
-        ]
-      },
-      {
-        "code": ".font-display, .prose :where(h2):not(:where([class~=\"not-prose\"] *)), .font-sans {\n    font-family: var(--custom-font-family);\n}\n",
-        "domains": [
-          "www.perplexity.ai"
-        ]
-      },
-      {
-        "code": "[class*=\"codeBlock\"] {\n    --fontFamilyMonospace: var(--custom-font-family-code);\n}\n\n.scriptor-code-editor, .scriptor-code-editor span {\n    font-family: var(--fontFamilyMonospace, \"\"), \"Consolas\", monospace !important;\n}\n",
-        "domains": [
-          "loop.cloud.microsoft"
-        ]
-      },
-      {
-        "code": "textarea#wiki_content {\n    font-family: var(--custom-font-family-code);\n}\n",
-        "domains": [
-          "github.com"
-        ]
-      },
-      {
-        "code": ".r-1tl8opc {\n    font-family: var(--custom-font-family);\n}\n\n.public-DraftStyleDefault-block {\n    padding-bottom: 4px;\n    padding-top: 4px;\n}\n",
-        "domains": [
-          "x.com",
-          "twitter.com"
-        ]
-      },
-      {
-        "code": "#video-title.ytd-rich-grid-media {\n    font-family: var(--custom-font-family);\n}",
-        "domains": [
-          "youtube.com"
-        ]
-      },
-      {
-        "code": ".fui-FluentProviderr0 {\n    --fontFamilyBase: var(--custom-font-family);\n    --fontFamilyMonospace: var(--custom-font-family-code);\n}\n",
-        "domains": [
-          "teams.microsoft.com"
-        ]
+        "code": "@font-face {\n    font-family: 'MS Pゴシック';\n    font-weight: normal;\n    src: local(\"Noto Sans\");\n}\n@font-face {\n    font-family: 'ＭＳ Ｐゴシック';\n    font-weight: normal;\n    src: local(\"Noto Sans\");\n}\n@font-face {\n    font-family: 'MS PGothic';\n    font-weight: normal;\n    src: local(\"Noto Sans\");\n}\n@font-face {\n    font-family: 'MS UI Gothic';\n    font-weight: normal;\n    src: local(\"Noto Sans\");\n}\n@font-face {\n    font-family: 'MS P明朝';\n    font-weight: normal;\n    src: local(\"Noto Serif\");\n}\n@font-face {\n    font-family: 'ＭＳ Ｐ明朝';\n    font-weight: normal;\n    src: local(\"Noto Serif\");\n}\n@font-face {\n    font-family: 'MS PMincho';\n    font-weight: normal;\n    src: local(\"Noto Serif\");\n}\n@font-face {\n    font-family: 'MS ゴシック';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'ＭＳ ゴシック';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS Gothic';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS 明朝';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'ＭＳ 明朝';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS Mincho';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS Pゴシック';\n    font-weight: bold;\n    src: local(\"Noto Sans\");\n}\n@font-face {\n    font-family: 'ＭＳ Ｐゴシック';\n    font-weight: bold;\n    src: local(\"Noto Sans\");\n}\n@font-face {\n    font-family: 'MS PGothic';\n    font-weight: bold;\n    src: local(\"Noto Sans\");\n}\n@font-face {\n    font-family: 'MS UI Gothic';\n    font-weight: bold;\n    src: local(\"Noto Sans\");\n}\n@font-face {\n    font-family: 'MS P明朝';\n    font-weight: bold;\n    src: local(\"Noto Serif\");\n}\n@font-face {\n    font-family: 'ＭＳ Ｐ明朝';\n    font-weight: bold;\n    src: local(\"Noto Serif\");\n}\n@font-face {\n    font-family: 'MS PMincho';\n    font-weight: bold;\n    src: local(\"Noto Serif\");\n}\n@font-face {\n    font-family: 'MS ゴシック';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'ＭＳ ゴシック';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS Gothic';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS 明朝';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'ＭＳ 明朝';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS Mincho';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n\nbutton, input, select, textarea {\n  font-family : sans-serif;\n}\n\npre, code {\n    font-family: monospace;\n}\n"
       }
     ],
-    "updateDate": 1721695115080,
-    "_id": "699e03c3-93e7-4935-9607-3f541430acad",
-    "_rev": 1721695115080,
-    "id": 1,
-    "exclusions": [
-      "https://dev.virtualcip.com/*",
-      "https://us-east-1.console.aws.amazon.com/*",
-      "https://ap-northeast-1.console.aws.amazon.com/*",
-      "https://docs.contegration.jp/*",
-      "https://sizu.me/*",
-      "http://docs.care-robot.com.s3-website-ap-northeast-1.amazonaws.com/*",
-      "https://dev.contegration.jp/*",
-      "http://127.0.0.1:8000/*",
-      "https://authid-stg-ss.nyutai.auth-thru.com/*",
-      "https://tenhou.net/*"
-    ]
-  },
-  {
-    "enabled": true,
-    "installDate": 1666663631305,
-    "name": "Mattermost",
-    "sections": [
-      {
-        "code": "div#root {\n    font-family: \"Kosugi Maru\"    \n}\n\nh1.markdown__heading {\n    font-size: 24px;\n    border-bottom: 1px solid rgba(119, 119, 119, .5);\n}\n\nh2.markdown__heading {\n    font-size: 22px;\n    border-bottom: 1px solid rgba(119, 119, 119, .5);\n}\n\nh3.markdown__heading {\n    font-size: 20px;\n}\n\nh4.markdown__heading {\n    font-size: 18px;\n}\n\nh5.markdown__heading {\n    font-size: 16px;\n}\n\nh6.markdown__heading {\n    font-size: 14px;\n}",
-        "domains": [
-          "slack.rococo-dev.net"
-        ]
-      }
-    ],
-    "updateDate": 1715903765452,
-    "_id": "de4bd4e0-5699-4dbb-83e4-221acd99170f",
-    "_rev": 1715903765453,
-    "id": 2
-  },
-  {
-    "enabled": true,
-    "installDate": 1685425834913,
-    "name": "redmine.rococo-dev.net",
-    "sections": [
-      {
-        "code": "@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');\n\nbody, input, select, h1, h2, h3, h4, #wrapper input[type=\"text\"], .modal input[type=\"text\"], textarea.text_cf {\n    font-family: Inter, HackGen, \"源柔ゴシックL\", \"源真ゴシック\", \"Noto Color Emoji\";\n    letter-spacing: .02em;\n}\n\n#wrapper textarea.wiki-edit, .modal textarea.wiki-edit, textarea#custom_field_description {\n    font-family: Inter, HackGen, \"源柔ゴシックL\", \"源真ゴシック\", \"Noto Color Emoji\";\n    font-size: 16px;\n    letter-spacing: .02em;\n}\n\n.tabular .wiki-preview, .tabular .jstTabs {\n    font-size: 16px;\n}\n\n/*.tabular .wiki-preview p {\n    padding-bottom: 0!important;\n}*/\n\ntable.filecontent td.line-code pre {\n    font-family: HackGen;\n}\n\n.wiki h1, .wiki h2, .wiki h3, .wiki h4 {\n    margin: 0;\n    margin-bottom: 1em;\n}\n\n.wiki h1:not(:first-of-type), .wiki h2:not(:first-of-type), .wiki h3:not(:first-of-type), .wiki h4:not(:first-of-type) {\n    padding-top: 1em;\n}\n\npre, code {\n    font-family: HackGen;\n}\n\n:not(pre) > code {\n    background-color: rgb(238, 238, 238, 0.7);\n    padding: 3px;\n    border-radius: 3px;\n    margin: 0 3px;\n}\n",
-        "domains": [
-          "redmine.rococo-dev.net"
-        ]
-      }
-    ],
-    "updateDate": 1715903771826,
-    "_id": "a657e783-536a-43d5-9c4b-e62924ae21d6",
-    "_rev": 1715903771826,
-    "id": 3
+    "updateDate": 1744238342039,
+    "_id": "b2029803-9843-40ab-abd9-6cde2ff30a77",
+    "_rev": 1744238342039,
+    "id": 4
   }
 ]
