@@ -10,13 +10,13 @@
       "openEditInWindow": false,
       "openEditInWindow.popup": false,
       "patchCsp": false,
-      "show-badge": false,
+      "show-badge": true,
       "styleViaASS": false,
       "styleViaXhr": false,
       "urlInstaller": true,
       "windowPosition": {},
       "compactWidth": 850,
-      "config.autosave": true,
+      "config.autosave": false,
       "schemeSwitcher.enabled": "system",
       "schemeSwitcher.nightStart": "18:00",
       "schemeSwitcher.nightEnd": "06:00",
@@ -55,16 +55,16 @@
       "editor.keyMap": "sublime",
       "editor.theme": "default",
       "editor.beautify": {
-        "selector_separator_newline": true,
-        "newline_before_open_brace": false,
-        "newline_after_open_brace": true,
-        "newline_between_properties": true,
-        "newline_before_close_brace": true,
-        "newline_between_rules": false,
-        "preserve_newlines": true,
         "end_with_newline": false,
         "indent_conditional": true,
-        "indent_mozdoc": true
+        "indent_mozdoc": true,
+        "newline_after_open_brace": true,
+        "newline_before_close_brace": true,
+        "newline_before_open_brace": false,
+        "newline_between_properties": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "selector_separator_newline": true
       },
       "editor.beautify.hotkey": "",
       "editor.lintDelay": 300,
@@ -111,16 +111,16 @@
   },
   {
     "enabled": true,
-    "installDate": 1744155133489,
+    "installDate": 1741737542706,
     "name": "フォント",
     "sections": [
       {
-        "code": "@font-face {\n    font-family: 'MS Pゴシック';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'ＭＳ Ｐゴシック';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS PGothic';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS UI Gothic';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS P明朝';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'ＭＳ Ｐ明朝';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS PMincho';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS ゴシック';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'ＭＳ ゴシック';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS Gothic';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS 明朝';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'ＭＳ 明朝';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS Mincho';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'メイリオ';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'Meiryo';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'Meiryo UI';\n    font-weight: normal;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS Pゴシック';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'ＭＳ Ｐゴシック';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS PGothic';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS UI Gothic';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS P明朝';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'ＭＳ Ｐ明朝';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS PMincho';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS ゴシック';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'ＭＳ ゴシック';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS Gothic';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS 明朝';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'ＭＳ 明朝';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'MS Mincho';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'メイリオ';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'Meiryo';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n@font-face {\n    font-family: 'Meiryo UI';\n    font-weight: bold;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n\nbutton,\ninput,\nselect,\ntextarea {\n    font-family: sans-serif;\n}\n\npre,\ncode {\n    font-family: monospace;\n}"
+        "code": ":root {\n    --system-sans-serif: sans-serif;\n    --system-monospace: monospace;\n}\n\nbody, h1, h2, h3, h4, h5, h6 {\n    font-family: var(--system-sans-serif);\n}\n\npre, code {\n    font-family: var(--system-monospace);\n}\n\n/* -----------------------------------\n * sans-serif\n * -----------------------------------*/\n/* MSゴシック系 */\n@font-face {\n    font-family: 'ＭＳ Ｐゴシック';\n    font-weight: auto;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n\n@font-face {\n    font-family: 'MS PGothic';\n    font-weight: auto;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n\n/* メイリオ系 */\n@font-face {\n    font-family: 'メイリオ';\n    font-weight: auto;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n\n@font-face {\n    font-family: 'Meiryo';\n    font-weight: auto;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n\n@font-face {\n    font-family: 'Meiryo UI';\n    font-weight: auto;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n\n/* 游ゴシック系 */\n@font-face {\n    font-family: '游ゴシック';\n    font-weight: auto;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n\n@font-face {\n    font-family: 'Yu Gothic';\n    font-weight: auto;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n\n@font-face {\n    font-family: 'Yu Gothic UI';\n    font-weight: auto;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n\n/* その他 */\n@font-face {\n    font-family: 'Segoe UI';\n    font-weight: auto;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n\n@font-face {\n    font-family: 'ui-sans-serif';\n    font-weight: auto;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n\n@font-face {\n    font-family: 'system-ui';\n    font-weight: auto;\n    src: local(\"GenJyuuGothicL-Medium\");\n}\n\n/* -----------------------------------\n * monospace\n * -----------------------------------*/\n@font-face {\n    font-family: 'consolas';\n    font-weight: auto;\n    src: local(\"Hackgen\");\n}\n\n@font-face {\n    font-family: 'lucida console';\n    font-weight: auto;\n    src: local(\"Hackgen\");\n}\n\n@font-face {\n    font-family: 'Courier';\n    font-weight: auto;\n    src: local(\"Hackgen\");\n}\n\n@font-face {\n    font-family: 'Courier New';\n    font-weight: auto;\n    src: local(\"Hackgen\");\n}\n\n@font-face {\n    font-family: 'Monaco';\n    font-weight: auto;\n    src: local(\"Hackgen\");\n}\n"
       }
     ],
-    "updateDate": 1744239088565,
-    "_id": "b2029803-9843-40ab-abd9-6cde2ff30a77",
-    "_rev": 1744239088565,
+    "updateDate": 1744936358669,
+    "_id": "530286c9-9d5f-4c38-bb01-ed6f2b62b1dd",
+    "_rev": 1744936358669,
     "id": 4
   }
 ]
